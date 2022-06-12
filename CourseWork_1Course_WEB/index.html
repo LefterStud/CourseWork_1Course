@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>
+        Olympic participants
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/olympic_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script defer src="js/index.js"></script>
+</head>
+
+<body class="mainBody">
+    <div class="header">
+        <div class="wrapper">
+            <img src="img/olympic_logo.png" alt="olympic">
+            <p>Citius, altius, fortius!</p>
+        </div>
+    </div>
+    <div class="medalsButt"></div>
+    <div class="sortingButt"></div>
+    <div class="countryMedals">
+        <div class="info">
+            <p>Medals of countries</p>
+        </div>
+    </div>
+
+    <div class="dark">
+        <div class="questionnaire">
+            <h2>Add a athlete:</h2>
+            <form id="anketPerson">
+                <input class="qName" type="text" placeholder="Name">
+                <input class="qSurname" type="text" placeholder="Surname">
+                <input class="qPatronymic" type="text" placeholder="Patronymic">
+                <input class="qCountry" type="text" placeholder="Country">
+                <select class="qkindOfSport" name="Kind_of_sport">
+                    <option value="none" disabled selected>Kinds of sport...</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Athletics">Athletics</option>
+                    <option value="Biathlon">Biathlon</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Powerlifting">Powerlifting</option>
+                    <option value="Chess">Chess</option>
+                </select>
+                <input class="qShownResult" type="number" placeholder="Result">
+                <div class="qInput">
+                    <input class="qButAdd" type="button" value="Add">
+                    <input class="qButCancel" type="button" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="darkDelete">
+        <div class="deleteBlock">
+            <h2>Delete a person:</h2>
+            <input class="dSurname" type="text" placeholder="Surname">
+            <div class="dInput">
+                <input class="deleteBut" type="button" value="Delete">
+                <input class="dCancel" type="button" value="Cancel">
+            </div>
+        </div>
+    </div>
+
+    <div class="darkSure">
+        <div class="confirmBlock">
+            <h2>Are You sure?</h2>
+            <div class="sInput">
+                <input class="sButYes" type="button" value="Yes">
+                <input class="sButNo" type="button" value="No">
+            </div>
+        </div>
+    </div>
+
+    <div class="darkPass">
+        <div class="passBlock">
+            <h2>Insert password</h2>
+            <p class="inP">*incorrect password</p>
+            <input class="passField" type="password" placeholder="Password">
+            <input class="confirm" type="button" value="Confirm">
+            <input class="cancelPass" type="button" value="Cancel">
+        </div>
+    </div>
+
+    <div class="darkEdit">
+        <div class="editAnket">
+            <h2>Edit element:</h2>
+            <form id="editPerson">
+                <input class="eName" type="text" placeholder="Name">
+                <input class="eSurname" type="text" placeholder="Surname">
+                <input class="ePatronymic" type="text" placeholder="Patronymic">
+                <input class="eCountry" type="text" placeholder="Country">
+                <select class="ekindOfSport" name="Kind_of_sport">
+                    <option value="none" disabled selected>Kinds of sport...</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Athletics">Athletics</option>
+                    <option value="Biathlon">Biathlon</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Powerlifting">Powerlifting</option>
+                    <option value="Chess">Chess</option>
+                </select>
+                <input class="eShownResult" type="number" placeholder="Result">
+                <div class="eInput">
+                    <input class="eButAdd" type="button" value="Edit">
+                    <input class="eButCancel" type="button" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="info_block">
+        <div class="wrapper">
+            <div class="sorting">
+                <h4>Edit list:</h4>
+                <div class="editBut">
+                    <input class="addPerson" type="button" value="Add a person">
+                    <input class="deletePerson" type="button" value="Delete a person">
+                </div>
+                <hr>
+                <div class="totalInfo">
+                    <h4 class="bannerCount"></h4>
+                    <input type="button" value="Reset sort" class="reset">
+                </div>
+
+                <hr>
+
+                <div class="liveSearchBlock">
+                    <h4>Search by:</h4>
+                    <form id="liveSearch">
+                        <select name="liveSearch" id="liveSearch" class="liveSearchField">
+                            <option value="none" disabled selected>Category...</option>
+                            <option value="name">Name</option>
+                            <option value="surname">Surname</option>
+                            <option value="patronymic">Patronymic</option>
+                            <option value="country">Country</option>
+                            <option value="kindOfSport">Kind of sport</option>
+                            <option value="registrationNumber">Registration number</option>
+                            <option value="shownResult">Result</option>
+                            <option value="ratingPlace">Rating place</option>
+                        </select>
+                    </form>
+                    <input type="text" class="byText" placeholder="Search...">
+                </div>
+
+                <hr>
+
+                <div class="sportWinnersBlock">
+                    <h4>Winners by sport:</h4>
+                    <form id="winnersList">
+                        <select name="winnersBySport" class="winnersBySport">
+                            <option value="none" disabled selected>Kinds of sport...</option>
+                            <option value="Football">Football</option>
+                            <option value="Basketball">Basketball</option>
+                            <option value="Volleyball">Volleyball</option>
+                            <option value="Athletics">Athletics</option>
+                            <option value="Biathlon">Biathlon</option>
+                            <option value="Hockey">Hockey</option>
+                            <option value="Swimming">Swimming</option>
+                            <option value="Tennis">Tennis</option>
+                            <option value="Powerlifting">Powerlifting</option>
+                            <option value="Chess">Chess</option>
+                        </select>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="countryWinnersBlock">
+                    <h4>Winners by country:</h4>
+                    <form id="winnersListCountry">
+                        <div class="winnersButs">
+                            <input type="text" class="winnersByCountry" placeholder="Country...">
+                            <input type="button" value="Search" class="winnersByCountryBut">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="info_shield"></div>
+        </div>
+    </div>
+</body>
+</html>
