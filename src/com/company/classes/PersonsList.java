@@ -21,7 +21,6 @@ public class PersonsList implements Serializable {
         persons.add(person);
     }
 
-
     public void remove(int numberOfPerson) {
         if (numberOfPerson < persons.size() && numberOfPerson >= 0) {
             persons.remove(numberOfPerson);

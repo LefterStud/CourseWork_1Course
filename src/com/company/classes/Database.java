@@ -21,5 +21,4 @@ public class Database {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(new File(filename), PersonsList.class);
     }
-
 }

@@ -15,7 +15,7 @@ public class Main {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 8080), 0);
         server.createContext("/back", new ServerOlympic());
         server.start();
-        System.out.println(System.lineSeparator() + "\033[1;32mServer started at:\tlocalhost:8080\u001B[0m");
+        System.out.println(System.lineSeparator() + "Server started at: localhost:8080");
     }
 
     public static void main(String[] args) throws IOException {

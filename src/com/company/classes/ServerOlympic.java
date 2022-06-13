@@ -113,7 +113,8 @@ public class ServerOlympic implements HttpHandler {
          */
         if (requestParamValues[0].equals("login")) {
             String pass = new BufferedReader(new InputStreamReader(httpExchange.getRequestBody())).lines().collect(Collectors.joining("\n"));
-            if (pass.equals("pass123")) {
+            String password = "pass123";
+            if (pass.equals(password)) {
                 response.append("true");
             } else {
                 response.append("false");
@@ -132,3 +133,4 @@ public class ServerOlympic implements HttpHandler {
         outputStream.close();
     }
 }
+
