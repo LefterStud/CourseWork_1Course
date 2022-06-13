@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 900px;
+    }
+    .info_block .wrapper .sorting {
+        width: 32%;
+    }
+    .info_block .wrapper .info_shield {
+        width: 68%;
+    }
+    .info_block .wrapper .info_shield .person_banner {
+        width: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        width: 600px;
+    }
+    .info_block .wrapper .sorting {
+        position: fixed;
+        width: 290px;
+        height: 100%;
+        left: -330px;
+        top: 0;
+        transition: all 1s;
+        background-color: #e5e5e5;
+    }
+    .sortingButt {
+        display: block;
+    }
+    .info_block .wrapper .info_shield {
+        width: 100%;
+    }
+    .info_block .wrapper .info_shield .person_banner {
+        width: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+    }
+    .info_block .wrapper .info_shield .person_banner {
+        width: 33%;
+    }
+}
