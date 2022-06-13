@@ -1,0 +1,577 @@
+.dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    display: flex;
+}
+
+.questionnaire {
+    width: 300px;
+    padding: 20px 20px;
+    background-color: #f0f0f0;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.questionnaire h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.questionnaire .qInput {
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.qName,
+.qSurname,
+.qPatronymic,
+.qCountry,
+.qkindOfSport,
+.qShownResult {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questionnaire .qInput input {
+    width: 45%;
+    height: 40px;
+    border: 0;
+}
+
+.questionnaire .qInput .qButAdd {
+    background-color: #00ee00;
+}
+
+.questionnaire .qInput .qButAdd:hover {
+    background-color: #00dd00;
+}
+
+.questionnaire .qInput .qButAdd:active {
+    background-color: #00ff00;
+}
+
+.questionnaire .qInput .qButCancel {
+    background-color: #ee0000;
+    color: #ececec;
+}
+
+.questionnaire .qInput .qButCancel:hover {
+    background-color: #dd0000;
+}
+
+.questionnaire .qInput .qButCancel:active {
+    background-color: #ff0000;
+}
+
+.darkEdit {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    display: flex;
+}
+.editAnket {
+    width: 300px;
+    padding: 20px 20px;
+    background-color: #f0f0f0;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+}
+.editAnket h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.editAnket .eInput {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.eName, .eSurname, .ePatronymic, .eCountry, .ekindOfSport, .eShownResult {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.editAnket .eInput input {
+    width: 45%;
+    height: 40px;
+    border: 0;
+}
+.editAnket .eInput .eButAdd {
+    background-color: #00ee00;
+}
+.editAnket .eInput .eButAdd:hover {
+    background-color: #00dd00;
+}
+.editAnket .eInput .eButAdd:active {
+    background-color: #00ff00;
+}
+.editAnket .eInput .eButCancel {
+    background-color: #ee0000;
+    color: #ececec;
+}
+.editAnket .eInput .eButCancel:hover {
+    background-color: #dd0000;
+}
+.editAnket .eInput .eButCancel:active {
+    background-color: #ff0000;
+}
+
+.darkSure {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    display: flex;
+}
+.confirmBlock {
+    width: 200px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 20px;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+.confirmBlock .sInput {
+    display: flex;
+    justify-content: space-between;
+}
+.confirmBlock .sInput input {
+    width: 45%;
+    height: 40px;
+    border: 0;
+}
+.confirmBlock .sInput .sButYes {
+    background-color: #00ee00;
+}
+.confirmBlock .sInput .sButYes:hover {
+    background-color: #00dd00;
+}
+.confirmBlock .sInput .sButYes:active {
+    background-color: #00ff00;
+}
+.confirmBlock .sInput .sButNo {
+    background-color: #ee0000;
+    color: #ececec;
+}
+.confirmBlock .sInput .sButNo:hover {
+    background-color: #dd0000;
+}
+.confirmBlock .sInput .sButNo:active {
+    background-color: #ff0000;
+}
+
+.darkPass {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    display: flex;
+}
+.passBlock {
+    width: 200px;
+    padding: 20px 20px;
+    background-color: #f0f0f0;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+}
+.passBlock .passField {
+    height: 40px;
+    margin-bottom: 15px;
+}
+.passBlock .confirm {
+    height: 40px;
+    margin-bottom: 15px;
+}
+.cancelPass {
+    height: 40px;
+}
+.inP {
+    color: #ff0000;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    visibility: hidden;
+}
+
+.darkDelete {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    display: flex;
+}
+.deleteBlock {
+    width: 200px;
+    padding: 20px 20px;
+    background-color: #f0f0f0;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+}
+.deleteBlock h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.deleteBlock .dInput, .dSurname {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.deleteBlock .dSurname {
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.deleteBlock .dInput input {
+    width: 45%;
+    height: 40px;
+    border: 0;
+}
+.deleteBlock .dInput .deleteBut {
+    background-color: #ee0000;
+    color: #ececec;
+}
+.deleteBlock .dInput .deleteBut:hover {
+    background-color: #dd0000;
+}
+.deleteBlock .dInput .deleteBut:active {
+    background-color: #ff0000;
+}
+.deleteBlock .dInput .dCancel {
+    background-color: #00ee00;
+}
+
+.deleteBlock .dInput .dCancel:hover {
+    background-color: #00dd00;
+}
+.deleteBlock .dInput .dCancel:active {
+    background-color: #00ff00;
+}
+
+
+input, select {
+    padding-left: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #e5e5e5;
+    justify-content: center;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .wrapper {
+    align-items: center;
+}
+.header .wrapper img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.header .wrapper p {
+    font-size: 20pt;
+    margin: 0 0;
+    margin-right: 10px;
+}
+
+.info_block {
+    width: 100%;
+    display: flex;
+}
+.info_block .wrapper .sorting {
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px 20px;
+}
+.info_block .wrapper .info_shield {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 230px;
+}
+.info_block .wrapper .info_shield .person_banner {
+    width: 20%;
+    height: 225px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.info_block .wrapper .info_shield .person_banner:hover {
+    box-shadow: 0 0 10px gray;
+}
+.info_block .wrapper .info_shield .person_banner p {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.info_block .wrapper .sorting .searchRadio {
+    width: 100%;
+}
+.info_block .wrapper .sorting .searchRadio {
+    width: 100%;
+}
+
+.countryMedals {
+    background-color: #e5e5e5;
+    position: fixed;
+    right: -340px;
+    width: 300px;
+    padding: 20px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 1s;
+    z-index: 5;
+}
+.countryMedals p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20pt;
+    margin-top: 0;
+}
+.medalsButt:hover {
+    background-color: #d4d4d4;
+}
+.countryMedals .info {
+    text-align: center;
+    align-items: flex-start;
+}
+.medalsButt {
+    position: fixed;
+    background-color: #e5e5e5;
+    width: 30px;
+    height: 60px;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    right: -1px;
+    top: calc(50% - 30px);
+    background-image: url("../img/open_arrow.png");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: -5px;
+    transition: all 1s;
+    z-index: 5;
+}
+.countryMedals .info th, td {
+    border: 1px solid black;
+}
+.countryMedals .info .goldM {
+    background-color: #FFD700;
+}
+.countryMedals .info .silverM {
+    background-color: #C0C0C0;
+}
+.countryMedals .info .bronzeM {
+    background-color: #CD7F32;
+}
+.countryMedals .info table {
+    border: 1px solid black;
+    background-color: white;
+    border-collapse: collapse;
+    width: 300px;
+    text-align: center;
+}
+
+
+.NF {
+    margin: auto;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.sorting h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.totalInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.totalInfo .reset {
+    width: 100px;
+    height: 30px;
+    background-color: #ee0000;
+    color: #ececec;
+    border: 0;
+}
+.totalInfo .reset:hover {
+    background-color: #dd0000;
+}
+.totalInfo .reset:active {
+    background-color: #ff0000;
+}
+.totalInfo .bannerCount {
+    margin: 0;
+}
+
+.editBut {
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.editBut input {
+    width: 45%;
+    height: 40px;
+    border: 0;
+}
+.editBut .addPerson {
+    background-color: #00ee00;
+}
+.editBut .addPerson:hover {
+    background-color: #00dd00;
+}
+.editBut .addPerson:active {
+    background-color: #00ff00;
+}
+.editBut .deletePerson {
+    background-color: #ee0000;
+    color: #ececec;
+}
+.editBut .deletePerson:hover {
+    background-color: #dd0000;
+}
+.editBut .deletePerson:active {
+    background-color: #ff0000;
+}
+
+.liveSearchBlock {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.liveSearchBlock .byText, .liveSearchField {
+    width: 100%;
+    height: 40px;
+}
+.sportWinnersBlock {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.sportWinnersBlock .winnersBySport {
+    width: 100%;
+    height: 40px;
+}
+.countryWinnersBlock {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.countryWinnersBlock .winnersButs {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.countryWinnersBlock .winnersButs .winnersByCountry {
+    width: 68%;
+    height: 40px;
+}
+.countryWinnersBlock .winnersButs .winnersByCountryBut {
+    width: 30%;
+    height: 40px;
+}
+
+
+.sortingButt:hover {
+    background-color: #d4d4d4;
+}
+.sortingButt {
+    z-index: 4;
+    display: none;
+    position: fixed;
+    background-color: #e5e5e5;
+    width: 30px;
+    height: 60px;
+    border-radius: 0 100% 100% 0/ 0 50% 50% 0;
+    left: 0px;
+    top: calc(50% - 30px);
+    background-image: url("../img/loupe.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: -5px;
+    transition: all 1s;
+}
