@@ -72,11 +72,6 @@ public class Person implements Serializable {
      */
     public void setCountry(String country) {
         this.country = country.strip();
-        for (int i = 0; i < this.country.length(); i++) {
-            if (!(Character.isAlphabetic(this.country.charAt(i)) || (this.country.charAt(i) == '-') || (this.country.charAt(i) == ' '))) {
-                this.country = "Incorrect data";
-            }
-        }
         this.country = ("" + this.country.charAt(0)).toUpperCase() + this.country.substring(1).toLowerCase();
         for (int i = 0; i < this.country.length(); i++) {
             if ((this.country.charAt(i) == '-') || (this.country.charAt(i) == ' ')) {
@@ -90,17 +85,11 @@ public class Person implements Serializable {
      */
     public void setKindOfSport(String kindOfSport) {
         this.kindOfSport = kindOfSport.strip();
-        for (int i = 0; i < this.kindOfSport.length(); i++) {
-            if (!Character.isAlphabetic(this.kindOfSport.charAt(i)) || (this.kindOfSport.charAt(i) == '-')) {
-                this.kindOfSport = "Incorrect data";
-            }
-        }
         this.kindOfSport = ("" + this.kindOfSport.charAt(0)).toUpperCase() + this.kindOfSport.substring(1).toLowerCase();
     }
 
     public void setRegistrationNumber(int registrationNumber) {
         this.registrationNumber = registrationNumber;
-
     }
 
     public void setShownResult(int shownResult) {
